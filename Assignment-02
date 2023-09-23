@@ -33,13 +33,13 @@
 
 5. What is difference between 'depandencies' and 'devDependencies'?
 -  Dependencies:-
-    When we created a file without any keywords then by default all the file is created inside dependencies.
-    These type of file is running in both Development and Production Environment.
+    When we install any packages without any keywords then by default all the packages is created inside dependencies.
+    These type of dependencies is running in both Development and Production Environment.
     ex:- npm i react
 
    DevDependencies:-
-     When we created a file with keyword -D then all the file is created inside devDependencies.
-     These type of file is only accessable in Development Environment.
+     When we install packages with keyword -D then all the packages is created inside devDependencies.
+     These type of dependencies is only accessable in Development Environment.
      ex:- npm i -D parcel
 
 6. What is Tree Shaking?
