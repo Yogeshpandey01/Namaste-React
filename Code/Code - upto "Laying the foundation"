@@ -1,1 +1,17 @@
-ABCD
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+//Babel transpiles the jsx to react and then to object.
+//If you write multiple lines of jsx it is mandatory to use ().
+const jsxheading = <h1 className="root" tabIndex="5">Namaste React---</h1>
+
+const HeadingComp = ()=> (
+    <div id="container">
+    {jsxheading}            {/* jsx do data sanatization so no need to worry about malicious cross site injection form attackers */}
+    <h1 className="heading">This is Functional Component</h1>
+    </div>
+)
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComp />); //render will replace the existing tag inside the parent object
