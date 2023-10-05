@@ -1,0 +1,87 @@
+** Is JSX mandatory for React?
+
+    --> JSX is not strictly mandatory for React, it is the standard and widely adopted syntax for developing React applications. Using JSX will make your code more readable, maintainable, and aligned.
+
+** Is ES6 mandatory for React?
+
+    --> ES6 (ECMAScript 2015) is not mandatory for React, but it is highly recommended and widely used in React development. React itself is written in JavaScript and does not require any specific version of ECMAScript to function.
+
+    --> However, modern JavaScript features provided by ES6 and later versions greatly enhance the development experience when building React applications.
+
+    ** Here are some reasons why ES6 is recommended for React development:
+
+    -->  Arrow Functions: ES6 introduces arrow functions (() => {} syntax), which provide a more concise way to define functions, especially when working with React components and event handlers.
+
+    --> Template Literals: Template literals (backticks) allow for more readable and flexible string interpolation, which can be beneficial when working with JSX templates in React.
+
+    --> Destructuring: ES6 destructuring simplifies the extraction of values from objects and arrays, making it easier to access props and state in React components.
+
+    --> Spread Operator: The spread operator (...) is useful for merging and copying objects and arrays. It's commonly used for spreading props or state within components.
+
+    --> Import and Export: ES6 modules provide a clean and standardized way to import and export components and functions, enhancing code organization and maintainability.
+
+    --> Let and Const: ES6 introduced block-scoped variables with let and constants with const, which can lead to more predictable and maintainable code.
+
+** {TitleComponent} vs <TitleComponent /> vs <TitleComponent></TitleComponent> in jsx?
+
+    --> {TitleComponent} is not used for rendering components directly but for embedding JavaScript expressions.
+
+    --> <TitleComponent /> and <TitleComponent></TitleComponent> are used to render React components within JSX, with the former being the more common and concise syntax.
+
+** How can I write comments in JSX?
+
+    Here are a couple of ways to write comments in JSX:
+    --> Single-Line Comments: You can use JavaScript's single-line comment syntax (//) to write comments in JSX.
+
+    example : 
+    const element = (
+    <div>
+    {/* This is a single-line JSX comment */}
+    <p>Hello, world!</p>
+    </div>
+    );
+
+    MultiLine Comments :  For multi-line comments, you can use JavaScript's multi-line comment syntax (/* ... */).
+
+    example : 
+    const element = (
+    <div>
+    {/* 
+      This is a multi-line JSX comment.
+      It can span multiple lines.
+    */}
+    <p>Hello, world!</p>
+    </div>
+    );
+
+** What is <React.Fragment></React.Fragment> and <></>?
+
+    --> In React, <React.Fragment></React.Fragment> and <></> are both used to create a wrapper or container element that doesn't render any additional DOM elements in the final output. They are commonly used when you need to group multiple elements together in a single parent element without introducing extra DOM nodes.
+
+** What is Virtual Dom?
+
+    --> The Virtual DOM (VDOM) is a concept used in web development and popularized by libraries like React. It's a programming concept and data structure that represents the current state of a web page's DOM (Document Object Model) in memory. The Virtual DOM is an abstraction of the real DOM and provides a way to efficiently update and manipulate the user interface (UI) in web applications.
+
+** What is Reconciliation in react?
+
+    --> Reconciliation in React refers to the process of updating the Document Object Model (DOM) to match the most recent state of a React component tree. When React components render, they produce a virtual representation of the DOM called the Virtual DOM. Reconciliation is the mechanism by which React determines what changes need to be made to the actual DOM to make it reflect the current state of the Virtual DOM efficiently.
+
+** What is React-Fiber?
+
+    --> React Fiber, often referred to as simply "Fiber," is an internal, ongoing rewrite of the core algorithm that powers React. It is a significant architectural change in React's internal workings, aimed at improving the performance, responsiveness, and rendering capabilities of React applications. Fiber was introduced in React 16, and it represents a long-term effort to enhance React's ability to handle complex UIs and enable features like asynchronous rendering and concurrent mode.
+
+** Why do we need keys in react? When do we need keys in react?
+
+    --> In React, the key prop is used to provide a unique identifier to child elements within an array of components or elements. Keys are essential for optimizing the rendering and updating of lists of elements. They help React identify which items have changed, been added, or been removed in a list, ensuring that the DOM is updated efficiently.
+
+    --> Use keys whenever you render lists or Dynamic Data or collections of elements in your React applications.
+
+** Can we use index as keys?
+
+    --> It is not recommended to use the index of the array as the key prop if you know the array will not be static. If the key is an index, reordering an item in the array changes it. Then React will get confused and re-render the incorrect element.
+
+** What is Props in react?
+
+    --> In React, "props" is a shorthand for "properties," and it refers to the mechanism for passing data from a parent component to a child component. Props are a fundamental concept in React and play a crucial role in building reusable and dynamic components.
+
+
